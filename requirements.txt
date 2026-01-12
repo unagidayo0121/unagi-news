@@ -1,0 +1,6 @@
+streamlit
+feedparser
+beautifulsoup4
+deep-translator
+pandas
+watchdog

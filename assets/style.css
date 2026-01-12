@@ -1,0 +1,46 @@
+/* Main Background */
+.stApp {
+    background-color: #0E1117;
+    color: #FAFAFA;
+}
+
+/* Titles and Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #FAFAFA !important;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Accent Color - Neon Blue */
+.stButton>button {
+    background-color: #0E1117;
+    color: #00FFFF;
+    border: 1px solid #00FFFF;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.stButton>button:hover {
+    background-color: #00FFFF;
+    color: #0E1117;
+    box-shadow: 0 0 10px #00FFFF;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 20px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: transparent;
+    color: #888;
+}
+
+.stTabs [aria-selected="true"] {
+    color: #00FFFF !important;
+    border-bottom-color: #00FFFF !important;
+}
+
+/* Cards (if using basic containers) */
+div[data-testid="stMetricValue"] {
+    color: #00FFFF;
+}
