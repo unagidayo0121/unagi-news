@@ -1,20 +1,20 @@
 # Antigravity News
 
-Personal news aggregation dashboard.
+自分専用ニュースアグリゲーションダッシュボード。
 
-## Setup
+## セットアップ (Setup)
 
-1.  Make sure you have Python installed and added to your PATH.
-2.  Install dependencies:
+1.  Pythonがインストールされており、PATHに通っていることを確認してください。
+2.  依存ライブラリをインストールします:
     ```bash
     pip install -r requirements.txt
     ```
 
-## Running the App
+## アプリの実行 (Running the App)
 
 ```bash
 streamlit run main.py
 ```
 
-## Troubleshooting
-If you see "Python was not found", please install Python from [python.org](https://www.python.org/downloads/) and ensure "Add Python to PATH" is checked during installation.
+## トラブルシューティング
+"Python was not found" と表示される場合、[python.org](https://www.python.org/downloads/) からPythonをインストールし、インストーラーの "Add Python to PATH" にチェックが入っていることを確認してください。
