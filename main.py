@@ -32,8 +32,8 @@ for i, tab in enumerate(tabs):
         category = CATEGORIES[i]
         st.header(f"{category} News")
         
-        if st.button(f"Update {category}", key=f"btn_{i}"):
-            with st.spinner("Fetching latest news..."):
+        if st.button(f"{category} を更新", key=f"btn_{i}"):
+            with st.spinner("最新ニュースを取得中..."):
                 # For now, fetching ALL feeds for every tab (filtering to be added)
                 # Ideally pass category to fetcher
                 from core.fetcher import fetch_all
@@ -58,7 +58,7 @@ for i, tab in enumerate(tabs):
                                 
                                 st.subheader(title_ja)
                                 if title_ja != title:
-                                    st.caption(f"Original: {title}")
+                                    st.caption(f"原文: {title}")
                                 
                                 # Translate summary
                                 summary = article.get('summary', '')
@@ -72,8 +72,8 @@ for i, tab in enumerate(tabs):
                             with col2:
                                 st.caption(f"**{article.get('source', 'Unknown')}**")
                                 st.caption(article.get('published', ''))
-                                st.markdown(f"[Read article]({article['link']})")
+                                st.markdown(f"[記事を読む]({article['link']})")
                             
                             st.divider()
                 else:
-                    st.warning("No articles found.")
+                    st.warning("記事が見つかりませんでした。")

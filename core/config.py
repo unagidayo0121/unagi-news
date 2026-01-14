@@ -9,12 +9,12 @@ RSS_FEEDS = {
 }
 
 CATEGORIES = [
-    "Comprehensive",
-    "Marketing",
-    "Politics",
-    "Economy",
-    "Startups",
-    "IT/Tech"
+    "総合",
+    "マーケティング",
+    "政治",
+    "経済",
+    "スタートアップ",
+    "IT/テクノロジー"
 ]
 
 KEYWORDS = {
